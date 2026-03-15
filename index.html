@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nublear Chat Widget — Demo</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        font-family: 'Inter', system-ui, sans-serif;
+        background: #040d1a;
+        color: #f8fafc;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        padding: 40px;
+      }
+      h1 { font-size: 2rem; font-weight: 800; }
+      p { color: #94a3b8; max-width: 480px; text-align: center; line-height: 1.6; }
+      .badge {
+        display: inline-block;
+        padding: 4px 12px;
+        border-radius: 999px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        background: rgba(0, 212, 255, 0.1);
+        color: #00d4ff;
+        border: 1px solid rgba(0, 212, 255, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <span class="badge">Live Demo</span>
+    <h1>Nublear Chat Widget</h1>
+    <p>An embeddable AI chat widget powered by Claude. Click the button in the bottom-right corner to start a conversation.</p>
+    <script
+      src="/src/main.ts"
+      type="module"
+      data-endpoint="http://localhost:3001"
+      data-bot-name="Nublear AI"
+      data-welcome="Hi! I'm the Nublear AI assistant. How can I help you today?"
+    ></script>
+  </body>
+</html>
